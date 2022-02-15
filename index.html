@@ -5,14 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tahmid Ecommerce</title>
+    <title>Tahmid Shop | Ecommerce Website</title>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <style>
-
-    </style>
 </head>
 
-<body>
+<body style="background-color: rgb(243, 237, 237)">
     <!-- Modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -32,10 +29,11 @@
             </div>
         </div>
     </div>
+    <!-- header start -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">TAHMID-SHOP</a>
+                <a class="navbar-brand" href="#">TahMid</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -44,10 +42,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mx-5 mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -55,9 +53,11 @@
                                 Products
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Bagpack</a></li>
-                                <li><a class="dropdown-item" href="#">Shoe</a></li>
-                                <li><a class="dropdown-item" href="#">Jackets</a></li>
+                                <li><a class="dropdown-item" href="#bagSection">Bagpack</a></li>
+                                <li><a class="dropdown-item" href="#shoeSection">Shoe</a></li>
+                                <li><a class="dropdown-item" href="#watchSection">Watch</a></li>
+                                <li><a class="dropdown-item" href="#mobileSection">Mobile Phone</a></li>
+                                <li><a class="dropdown-item" href="#sportSection">Sports Gallery</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -70,37 +70,37 @@
         </nav>
     </header>
     <!-- home section -->
-    <section class="container-fluid my-5 mx-0">
+    <section id="home" class="container-fluid my-5 mx-0">
         <div style="height: 100%;" id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" style="background: linear-gradient(black,black);">
-                    <img style="opacity: .6;" src="images/bg-1.jpg" class="d-block w-100" height="600px" alt="...">
+                    <img style="opacity: .6;" src="images/bg-1.jpg" class="d-block w-100" height="500px" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h4 class="text-warning">Welcome to my Website</h4>
                         <p style="font-size: 23px;font-weight: 600; color:aqua">This is an ecommerce website which is
                             made by developer Tahmid
                             Dhrubo</p>
-                        <button class="btn btn-outline-primary">Contact Us</button>
+                        <a href="#contact"><button class="btn btn-outline-primary">Contact Us</button></a>
                     </div>
                 </div>
                 <div class=" carousel-item" style="background: linear-gradient(black,black);">
-                    <img style="opacity: .4;" src="images/bg-2.jpg" class="d-block w-100" height="600px" alt="...">
+                    <img style="opacity: .4;" src="images/bg-2.jpg" class="d-block w-100" height="500px" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h4 class="text-warning">Tahmid Ecommerce Website</h4>
                         <p style="font-size: 23px;font-weight: 600; color:aqua">You can buy any kind of groccery
                             from
                             there
                             with higher discount.</p>
-                        <button class="btn btn-outline-danger">Contact Us</button>
+                        <a href="#contact"><button class="btn btn-outline-danger">Contact Us</button></a>
                     </div>
                 </div>
                 <div class="carousel-item" style="background: linear-gradient(black,black);">
-                    <img style="opacity: .3;" src="images/bg-3.jpg" class="d-block w-100" height="600px" alt="...">
+                    <img style="opacity: .3;" src="images/bg-3.jpg" class="d-block w-100" height="500px" alt="...">
                     <div class="carousel-caption d-none d-md-block">
                         <h4 class="text-warning">Buy your product</h4>
                         <p style="font-size: 23px;font-weight: 600; color:aqua">Choose the products and buy it for your
                             own demand.</p>
-                        <button class="btn btn-outline-light">Contact Us</button>
+                        <a href="#contact"> <button class="btn btn-outline-light">Contact Us</button></a>
                     </div>
                 </div>
             </div>
@@ -118,16 +118,16 @@
     </section>
     <!-- product section -->
     <section class="container">
-        <h1 class="text-center text-primary">Products</h1>
-        <div class="row gx-3">
+        <h1 class="text-center text-primary">(Products)</h1>
+        <div class="row gx-3 mt-5" id="bagSection">
+            <h2 class="text-center text-success mt-3"><ins>Bag Packs</ins></h2>
             <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;">
+                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
                     <img src="images/bag-1.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">My Bag</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <h5 class="card-title">Red Bag</h5>
+                        <p class="card-text">Awesome and stylish red colour bag.</p>
+                        <h5 style="color:blueviolet;"> Price: <span class="text-success">$1400</span></h5>
                         <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
                             Add to Cart
@@ -136,13 +136,12 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;">
+                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
                     <img src="images/bag-2.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">My Bag</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <h5 class="card-title">Blue Bag</h5>
+                        <p class="card-text">So stylish and wonderfull bag for travelling</p>
+                        <h5 style="color:blueviolet;"> Price: <span class="text-success">$1360</span></h5>
                         <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
                             Add to Cart
@@ -151,13 +150,12 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;">
+                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
                     <img src="images/bag-3.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">My Bag</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <h5 class="card-title">Gray Bag</h5>
+                        <p class="card-text">Best bag for travelling and also for the students</p>
+                        <h5 style="color:blueviolet;"> Price: <span class="text-success">$1290</span></h5>
                         <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
                             Add to Cart
@@ -166,13 +164,12 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;">
+                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
                     <img src="images/bag.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">My Bag</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <h5 class="card-title">BLack Bag</h5>
+                        <p class="card-text">Bag for all ages people and for all work.</p>
+                        <h5 style="color:blueviolet;"> Price: <span class="text-success">$1790</span></h5>
                         <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#staticBackdrop">
                             Add to Cart
@@ -180,85 +177,490 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;">
-                    <img src="images/shoe-1.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Bag</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Add to Cart
-                        </button>
+            <!-- Shoe -->
+            <div class="row gx-3 mt-5" id="shoeSection">
+                <h2 class="text-center text-success mt-3"><ins>Shoes</ins></h2>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/shoe-1.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sply 350</h5>
+                            <p class="card-text">Best colourfull shoe and stylsih for all ages people.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$2100</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/shoe-2.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bata</h5>
+                            <p class="card-text">Some awesome desginable collection of bata shoe for all.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$2750</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/shoe-3.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Adidas</h5>
+                            <p class="card-text">Adidas is giving you some stylish shoes of red collection.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$2930</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/shoes.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Apex</h5>
+                            <p class="card-text">Colourfull desgine and so much flexible for all ages of people.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$2380</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;">
-                    <img src="images/shoe-2.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Bag</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Add to Cart
-                        </button>
+
+
+            <!-- Watch  -->
+            <div class="row gx-3 mt-5" id="watchSection">
+                <h2 class="text-center text-success mt-3"><ins>Watch</ins></h2>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/watch.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rollex</h5>
+                            <p class="card-text">Rollex is giving so much beautiful and stylish watch for the young.
+                            </p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$5000</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/watch-1.png" width="100px" height="200px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Titan</h5>
+                            <p class="card-text">Titan is giving you a most expensive touch watch for all ages of people
+                            </p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$3000</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/watch-2.png" width="200px" height="240px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Piagnet</h5>
+                            <p class="card-text">A nice collection of paiagnet in golden version after 3 years.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$3500</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/watch-3.png" width="350px" class="mt-3 card-img-top w-75 d-block mx-auto"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Blancpain</h5>
+                            <p class="card-text">At the current time of Bangladesh the version of Blancpain has become
+                                so much used watch.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$7100</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;">
-                    <img src="images/shoe-3.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Bag</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Add to Cart
-                        </button>
+
+            <!-- Mobile  -->
+            <div class="row gx-3 mt-5" id="mobileSection">
+                <h2 class="text-center text-success mt-3"><ins>Mobile Phones</ins></h2>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/phone-1.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Samsung A7</h5>
+                            <p class="card-text">New version of samsung.
+                            </p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$50000</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/phone-2.png" width="100px" height="200px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Xiaomi</h5>
+                            <p class="card-text">Xiaomi with some new features.
+                            </p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$30000</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/phone-3.png" height="270px" class="mt-3 card-img-top w-75 d-block mx-auto"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">One plus</h5>
+                            <p class="card-text">Most stylish phone for current time.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$85000</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/phone-4.png" width="350px" class="mt-3 card-img-top w-75 d-block mx-auto"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Oppo A3</h5>
+                            <p class="card-text">Latest black version of Oppo A3.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$21000</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/phone-5.png" width="350px" class="mt-3 card-img-top w-75 d-block mx-auto"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone-xii</h5>
+                            <p class="card-text">Iphone-xii with some new features.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$91000</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/phone-6.png" width="350px" height="260px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Iphone-x</h5>
+                            <p class="card-text">Latest golden iphone-x pro.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$112000</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;">
-                    <img src="images/shoes.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Bag</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Add to Cart
-                        </button>
+
+
+            <!-- Sports gallery  -->
+            <div class="row gx-3 mt-5" id="sportSection">
+                <h2 class="text-center text-success mt-3"><ins>Sports Gallery</ins></h2>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/bat-2.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Match Bat</h5>
+                            <p class="card-text">This is only for the higher match bat.
+                            </p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$5400</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12 ">
-                <div class="my-5 mx-auto card border border-primary " style="width: 18rem;">
-                    <img src="images/watch.png" class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">My Bag</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
-                        <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Add to Cart
-                        </button>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/jursey-2.png" width="100px" height="200px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Yellow Jursey</h5>
+                            <p class="card-text">Awesome and stylish south-african jursey
+                            </p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$300</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/ball-3.png" height="180px" class="mt-3 card-img-top w-75 d-block mx-auto"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">White Ball</h5>
+                            <p class="card-text">White ball for one day and T-20 match.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$370</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/bat-3.png" width="350px" class="mt-3 card-img-top w-75 d-block mx-auto"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Practise Bat</h5>
+                            <p class="card-text">Just useable for practise in the net.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$2100</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/helmet-1.png" width="350px" class="mt-3 card-img-top w-75 d-block mx-auto"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Blue-Halmet</h5>
+                            <p class="card-text">Best quality of blue helmet collection.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$600</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/jursey-1.png" width="350px" height="260px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Qatar Jursey</h5>
+                            <p class="card-text">Jursey for the spactetors who love sports.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$520</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/gloves-1.png" width="350px" height="260px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">White Gloves</h5>
+                            <p class="card-text">Best collection of batting gloves.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$1000</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/jursey-3.png" width="350px" height="250px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Jursey</h5>
+                            <p class="card-text">Football jursey for the football lovers.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$630</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/helmet-2.png" width="350px" height="260px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Black-Helmet</h5>
+                            <p class="card-text">Best match helmet of collection black.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$1200</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/jursey-5.png" width="350px" height="260px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Orange Jursey</h5>
+                            <p class="card-text">SRH jursey for the IPL lovers.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$720</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/gloves-2.png" width="350px" height="230px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Batting Gloves</h5>
+                            <p class="card-text">Best batting gloves for higher match.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$900</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/ball-1.png" height="240px" class="mt-3 card-img-top w-75 d-block mx-auto"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Red Ball</h5>
+                            <p class="card-text">Best dews ball collection of red colour.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$380</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/bat-1.png" width="350px" height="260px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tennis Bat</h5>
+                            <p class="card-text">Tennis bat for the local players.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$900</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/ball-2.png" width="350px" height="250px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Match Ball</h5>
+                            <p class="card-text">Red ball collection for test matches.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$500</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                    <div class="my-5 mx-auto card border border-primary " style="width: 18rem;  height: 470px;">
+                        <img src="images/jursey-4.png" width="350px" height="260px"
+                            class="mt-3 card-img-top w-75 d-block mx-auto" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bangladesh Jursey</h5>
+                            <p class="card-text">Best collection of Bangladesh jursey for cricket lovers.</p>
+                            <h5 style="color:blueviolet;"> Price: <span class="text-success">$1000</span></h5>
+                            <button type="button" class="btn-primary btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">
+                                Add to Cart
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
+    <!-- contact section -->
+    <section id="contact" class="container bg-dark py-4">
+        <h1 class="text-center text-white mb-2"><ins>Sign In</ins></h1>
+        <form action="" class="w-50 m-auto">
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+            </div>
+            <button class="d-block m-auto btn btn-outline-primary my-3">Sign In</button>
+        </form>
+    </section>
+    <!-- footer -->
+    <footer style="background-color: black;" class="mt-4 py-3 d-flex align-items-center justify-content-center">
+        <p class="text-white">&copy All rights are reserved by developer <a
+                style="text-decoration: none; color: rgb(158, 123, 70) !important;" class="text-white" target="blank"
+                href="https://github.com/Dhrubo256">Tahmid
+                Dhurbo</a></p>
+    </footer>
     <!-- scripting my js file -->
     <script src="bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/32d26ab3a0.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
